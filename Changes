@@ -1,5 +1,12 @@
 Revision history for LWP-UserAgent-Patch-FilterMirror
 
+0.02    2014-06-29 (SHARYANTO)
+
+        - No functional changes.
+
+        - Fix typo on -filter config.
+
+
 0.01    2014-06-29 (SHARYANTO)
 
         - First release.
