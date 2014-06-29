@@ -17,8 +17,8 @@ my $p_mirror = sub {
     my $orig = $ctx->{orig};
 
     my ($self, $url, $file) = @_;
-    die __PACKAGE__ . ": please specify filter code" unless $config{filter};
-    return unless $config{filter}->($url, $file);
+    die __PACKAGE__ . ": please specify filter code" unless $config{-filter};
+    return unless $config{-filter}->($url, $file);
     return $orig->(@_);
 };
 
@@ -26,7 +26,7 @@ sub patch_data {
     return {
         v => 3,
         config => {
-            filter => {
+            -filter => {
                 schema => 'code*',
             },
         },
