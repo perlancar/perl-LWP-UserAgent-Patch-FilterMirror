@@ -77,6 +77,8 @@ sub patch_data {
 
 To use with CPAN::Mini command-line script:
 
+ % PERL5OPT="-MLWP::UserAgent::Patch::FilterMirrorMaxSize=-size,10485760,-verbose,1" minicpan -l /cpan -r http://mirrors.kernel.org/cpan/
+
 
 =head1 DESCRIPTION
 
@@ -84,5 +86,10 @@ If size is larger than the limit, the patch's wrapper method will return a dummy
 304 (not modified) response object. This trick should work on at least some
 applications (like with L<CPAN::Mini>, which I originally wrote this patch
 module for), but it might not :-)
+
+
+=head1 SEE ALSO
+
+L<http://blogs.perl.org/users/steven_haryanto/2014/06/skipping-large-files-when-mirroring-your-mini-cpan.html>
 
 =cut
