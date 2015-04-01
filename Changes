@@ -1,5 +1,12 @@
 Revision history for LWP-UserAgent-Patch-FilterMirror
 
+0.04    2015-04-01 (PERLANCAR)
+
+	- No functional changes.
+
+	- Include LWP::UserAgent 6.1x as target version.
+
+
 0.03    2014-07-02 (SHARYANTO)
 
         - No functional changes.
