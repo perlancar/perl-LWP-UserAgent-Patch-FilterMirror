@@ -59,7 +59,7 @@ sub patch_data {
         patches => [
             {
                 action => 'wrap',
-                mod_version => qr/^6\.0.+/,
+                mod_version => qr/^6\.[01].+/,
                 sub_name => 'mirror',
                 code => $p_mirror,
             },
