@@ -23,7 +23,7 @@ my $p_mirror = sub {
 
     my $size = (-s $file);
     if ($size && $size > $limit) {
-        say "mirror($url, $file): local size > limit ($limit), skipping"
+        say "mirror($url, $file): local size ($size) > limit ($limit), skipping"
             if $config{-verbose};
         return HTTP::Response->new(304);
     }
@@ -35,7 +35,7 @@ my $p_mirror = sub {
         last unless $resp->is_success;
         last unless defined(my $len = $resp->header("Content-Length"));
         if ($len > $limit) {
-            say "mirror($url, $file): remote size > limit ($limit), skipping"
+            say "mirror($url, $file): remote size ($len) > limit ($limit), skipping"
                 if $config{-verbose};
             return HTTP::Response->new(304);
         }
