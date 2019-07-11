@@ -1,29 +1,29 @@
-0.05    2015-07-27 (PERLANCAR)
+0.05    2015-07-27  Released-By: PERLANCAR
 
 	- [ux] Show local/remote size which exceeds size.
 
 
-0.04    2015-04-01 (PERLANCAR)
+0.04    2015-04-01  Released-By: PERLANCAR
 
 	- No functional changes.
 
 	- Include LWP::UserAgent 6.1x as target version.
 
 
-0.03    2014-07-02 (SHARYANTO)
+0.03    2014-07-02  Released-By: SHARYANTO
 
         - No functional changes.
 
         - Bugfix: forgot to include cli example [RT#96883]
 
 
-0.02    2014-06-29 (SHARYANTO)
+0.02    2014-06-29  Released-By: SHARYANTO
 
         - No functional changes.
 
         - Fix typo on -filter config.
 
 
-0.01    2014-06-29 (SHARYANTO)
+0.01    2014-06-29  Released-By: SHARYANTO
 
         - First release.
